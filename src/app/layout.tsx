@@ -1,13 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { ChildrenType } from "@/core/interface/children.interface";
-import { Inter as FontSans } from "next/font/google";
-import ProvidersWrapper from "@/core/providers/wrapper";
-
-export const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
+import { Urbanist } from "next/font/google";
+const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Rajan Raj Shah 🤟",
@@ -37,15 +32,7 @@ export default function RootLayout({ children }: ChildrenType) {
           rel="stylesheet"
         ></link>
       </head>
-      <body
-        className={[
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
-        ].join(" ")}
-      >
-        {children}
-        {/* <ProvidersWrapper>{children}</ProvidersWrapper> */}
-      </body>
+      <body className={urbanist.className}>{children}</body>
     </html>
   );
 }

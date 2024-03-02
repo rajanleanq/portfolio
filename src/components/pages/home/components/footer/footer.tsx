@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="absolute bottom-4 left-8 flex items-end">
         <div>
           <p className="font-bigShouldersText text-[250px] text-white z-20 relative font-600 leading-none tracking-[-8px]">
-            Let's
+            Let{"'"}s
           </p>
           <p className="font-bigShouldersText text-[250px] text-white z-20 relative font-600 leading-tight tracking-[-8px]">
             Connect
@@ -27,7 +27,7 @@ export default function Footer() {
         <div className="m-12 flex flex-col gap-24">
           <div className="flex flex-col gap-4">
             <p className="font-lexend text-2xl text-white">
-              I'M ALWAYS INTERESTED ABOUT
+              I{"'"}M ALWAYS INTERESTED ABOUT
             </p>
             <div className="flex flex-wrap gap-4">
               {interested_about.map((item: string) => (
@@ -73,7 +73,9 @@ export default function Footer() {
                   Github
                 </Link>
               </div>
-              <p className="text-white text-sm font-semibold">@2024 Copyright Rajan Raj Shah</p>
+              <p className="text-white text-sm font-semibold">
+                @2024 Copyright Rajan Raj Shah
+              </p>
             </div>
           </div>
         </div>
